@@ -621,6 +621,9 @@
       <label for="date">Tanggal Request Layanan:</label>
       <input type="date" id="date" name="date" required>
 
+      <label for="phone">Nomor WhatsApp:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Contoh: 6281234567890" required>
+
       <label for="time">Jam Request Layanan:</label>
       <input type="time" id="time" name="time" required>
 
@@ -747,6 +750,7 @@ document.getElementById("orderServiceForm").addEventListener("submit", function 
   e.preventDefault();
 
   const nama = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value.trim();
   const tanggal = document.getElementById("date").value;
   const jam = document.getElementById("time").value;
   const alamat = document.getElementById("address").value;
