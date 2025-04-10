@@ -776,7 +776,7 @@ document.getElementById("orderServiceForm").addEventListener("submit", function 
       document.getElementById("orderForm").style.display = "none";
       document.getElementById("popupOverlay").style.display = "none";
       document.getElementById("orderServiceForm").reset();
-    }, 3600);
+    }, 3860);
   }, 2000);
 });
 
